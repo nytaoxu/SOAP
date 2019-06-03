@@ -6,7 +6,7 @@ from spyne.server.wsgi import WsgiApplication
 
 
 class HelloWorldService(ServiceBase):
-    @rpc(Integer, _returns=Iterable(Unicode))
+    @rpc(Integer, _returns=Iterable(Integer))
     def say_fibonacci(ctx, times):
         """Docstrings for service methods appear as documentation in the wsdl.
         <b>What fun!</b>
